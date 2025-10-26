@@ -545,6 +545,11 @@ nav .navbar-toggler {
   background-color: var(--hex-black);
   border: 1px solid var(--hex-black);
   margin: 0px 10px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 
 #team-sec li a {
@@ -611,12 +616,12 @@ nav .navbar-toggler {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  border: none;
+  border: 2px transparent solid;
 }
 
 #contact-sec .form-control:focus {
   box-shadow: unset;
-  border: 2px black solid;
+  border: 2px var(--mostly-black) solid;
 }
 
 #contact-sec textarea.form-control {
@@ -627,7 +632,7 @@ nav .navbar-toggler {
   min-height: 105px;
   max-height: 200px;
   max-width: 100%;
-  border: none;
+  border: 2px transparent solid;
 }
 
 #contact-sec button {
@@ -881,9 +886,27 @@ header .h1-wrap::after {
 #portfolio-sec .portfolio-layer p {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
-  margin: 0px 0px 15px;
+  margin: 0px;
   color: var(--very-dark-gray);
   letter-spacing: 2px;
+  transform: translateY(-25px);
+  -webkit-transform: translateY(-25px);
+  -moz-transform: translateY(-25px);
+  -ms-transform: translateY(-25px);
+  -o-transform: translateY(-25px);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+#portfolio-sec .img-wrap:hover .portfolio-layer p {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
 }
 
 #portfolio-sec .portfolio-layer ul {
@@ -894,6 +917,11 @@ header .h1-wrap::after {
   width: 30px;
   height: 30px;
   background-color: var(--hex-black);
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
 }
 
 #portfolio-sec .portfolio-layer li:hover {
