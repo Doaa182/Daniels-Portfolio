@@ -615,9 +615,12 @@ nav .navbar-toggler {
 }
 
 #contact-sec textarea.form-control {
-  resize: both;
-  height: 160px;
-  max-height: 160px;
+  /* resize: both; */
+  /* height: 160px; */
+  resize: vertical;
+  /* max-height: 160px; */
+  min-height: 105px;
+  max-height: 200px;
   max-width: 100%;
   border: none;
 }
