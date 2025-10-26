@@ -305,6 +305,20 @@ nav .navbar-toggler {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   margin-bottom: 30px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+#services-sec .services-card:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-8px) rotate(-1deg);
+  -moz-transform: translateY(-8px) rotate(-1deg);
+  -ms-transform: translateY(-8px) rotate(-1deg);
+  -o-transform: translateY(-8px) rotate(-1deg);
 }
 
 #services-sec .services-card i {
