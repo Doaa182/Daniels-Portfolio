@@ -189,16 +189,19 @@ nav .navbar-toggler {
   margin-bottom: 30px;
 }
 
-#about-sec li:first-child .progress-bar {
-  width: 95%;
+#about-sec li .progress-bar {
+  width: 30%;
+  animation: fillProgressBar 7s ease infinite;
+  -webkit-animation: fillProgressBar 7s ease infinite;
 }
 
-#about-sec li:nth-child(2) .progress-bar {
-  width: 80%;
-}
-
-#about-sec li:last-child .progress-bar {
-  width: 90%;
+@keyframes fillProgressBar {
+  from {
+    width: 30%;
+  }
+  to {
+    width: var(--end);
+  }
 }
 
 #about-sec .progress-bar span {
