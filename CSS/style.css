@@ -15,10 +15,6 @@ header {
   height: 100vh;
 }
 
-header .header-content {
-  margin-top: 70px;
-}
-
 header .header-content p {
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
@@ -73,10 +69,18 @@ header .header-content li a {
 }
 
 header .navbar {
-  padding: 25px 0 30px;
   background-color: transparent;
-  padding: 0px 0px 30px;
-  margin-bottom: 20px;
+  z-index: 999;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  letter-spacing: 0px;
+  border-bottom: 1px solid transparent;
 }
 
 nav .navbar-brand {
@@ -95,25 +99,6 @@ nav .navbar-brand {
 
 nav .navbar-toggler {
   color: transparent;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link.active:after {
-  width: 100%;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link:after {
-  content: "";
-  width: 0%;
-  height: 2.5px;
-  background-color: var(--white);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
 }
 
 .navbar-toggler-icon {
@@ -195,14 +180,14 @@ nav .navbar-toggler {
 }
 
 #about-sec li .progress-bar {
-  width: 30%;
+  width: 40%;
   animation: fillProgressBar 7s ease infinite;
   -webkit-animation: fillProgressBar 7s ease infinite;
 }
 
 @keyframes fillProgressBar {
   from {
-    width: 30%;
+    width: 40%;
   }
   to {
     width: var(--end);
@@ -319,7 +304,7 @@ nav .navbar-toggler {
 
 #services-sec .services-card:hover {
   transform: translateY(-8px) rotate(-1deg);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(var(--black), 0.15);
   -webkit-transform: translateY(-8px) rotate(-1deg);
   -moz-transform: translateY(-8px) rotate(-1deg);
   -ms-transform: translateY(-8px) rotate(-1deg);
@@ -490,7 +475,7 @@ nav .navbar-toggler {
 #team-sec .social-layer {
   position: absolute;
   inset: 5px;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(var(--rgb-white), 0.95);
 
   opacity: 0;
   transition: all 0.5s;
@@ -857,21 +842,19 @@ header .h1-wrap::after {
 #portfolio-sec .portfolio-layer {
   position: absolute;
   inset: 5px;
-
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(var(--rgb-white), 0.95);
   opacity: 0;
   transition: all 0.5s;
   z-index: 2;
-
   transform: translateY(10px);
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
   -ms-transform: translateY(10px);
   -o-transform: translateY(10px);
-
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 
 #portfolio-sec .img-wrap:hover .portfolio-layer {
@@ -950,6 +933,7 @@ header .h1-wrap::after {
   --mostly-white: #f7f7f7;
   --mostly-black: #1c1c1c;
   --hex-black: #000000;
+  --rgb-white: 255, 255, 255;
   --light-gray: #f4f4f4;
   --dark-gray: #222222;
 }

@@ -30,6 +30,13 @@
   .navbar-expand-lg .navbar-nav .nav-link {
     color: #343434;
     margin: 10px;
+    display: inline-block;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link:hover,
+  .navbar-expand-lg .navbar-nav .nav-link.active {
+    letter-spacing: 2px;
+    border-bottom: 1px solid black;
   }
 }
 
@@ -64,6 +71,13 @@
   .navbar-expand-lg .navbar-nav .nav-link {
     color: #343434;
     margin: 10px;
+    display: inline-block;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link:hover,
+  .navbar-expand-lg .navbar-nav .nav-link.active {
+    letter-spacing: 2px;
+    border-bottom: 1px solid black;
   }
 }
 
@@ -85,14 +99,28 @@
     padding: 0px 100px;
   }
 
+  header .navbar {
+    padding: 0px;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    gap: 19px;
+  }
+
   .navbar-expand-lg .navbar-nav .nav-link {
-    margin: 19px;
     font-size: 14px;
     color: #ffffff;
+    display: block;
   }
 
   .navbar-nav {
     background-color: transparent;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link:hover,
+  .navbar-expand-lg .navbar-nav .nav-link.active {
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
   }
 }
 
