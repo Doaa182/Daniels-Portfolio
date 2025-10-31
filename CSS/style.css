@@ -16,7 +16,7 @@ header {
 }
 
 header .header-content p {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 10px;
@@ -59,7 +59,7 @@ header .header-content li:hover:last-child {
 }
 
 header .header-content li a {
-  font-size: 14px;
+  font-size: var(--fs-sm);
   width: 100%;
   height: 100%;
   display: flex;
@@ -84,10 +84,10 @@ header .navbar {
 }
 
 nav .navbar-brand {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
   padding: 20px 0px 0px;
   margin: 0px;
-  font-size: 18px;
+  font-size: var(--fs-lg);
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -113,7 +113,7 @@ nav .navbar-toggler {
 #about-sec h2 {
   font-weight: 900;
   font-size: 40px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
   color: var(--very-dark-gray);
   margin-bottom: 80px;
 }
@@ -138,7 +138,7 @@ nav .navbar-toggler {
 
 #about-sec h2 {
   font-weight: 800;
-  font-size: 30px;
+  font-size: var(--fs-xxl);
   margin-bottom: 5px;
 }
 
@@ -146,12 +146,12 @@ nav .navbar-toggler {
   color: #999999;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: var(--fs-sm);
 }
 
 #about-sec p:nth-child(3) {
   line-height: 1.6;
-  font-size: 15px;
+  font-size: var(--fs-md);
   color: var(--dark-grayish-cyan);
 }
 
@@ -163,11 +163,11 @@ nav .navbar-toggler {
   background-color: var(--mostly-white);
   height: 25px;
   box-shadow: 0px 2px 7px rgba(var(--black), 0.15) inset;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: var(--radius-sm);
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
 }
 
 #about-sec .progress-bar {
@@ -195,8 +195,8 @@ nav .navbar-toggler {
 }
 
 #about-sec .progress-bar span {
-  font-size: 13px;
-  font-family: "Montserrat", sans-serif;
+  font-size: var(--fs-xs);
+  font-family: var(--font-secondary);
 }
 
 #about-sec .progress-bar span::after {
@@ -223,17 +223,17 @@ nav .navbar-toggler {
   color: var(--very-light-gray);
   padding: 10px 30px;
   border: 1px solid var(--mostly-black);
-  border-radius: 5px;
-  font-size: 13px;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
   margin-top: 20px;
 }
 
@@ -247,17 +247,17 @@ nav .navbar-toggler {
   color: var(--very-dark-gray);
   padding: 10px 30px;
   border: 1px solid var(--mostly-black);
-  border-radius: 5px;
-  font-size: 13px;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
   margin-top: 20px;
 }
 
@@ -289,11 +289,11 @@ nav .navbar-toggler {
 #services-sec .services-card {
   padding: 50px 20px;
   box-shadow: 0px 10px 30px -8px rgba(var(--black), 0.1);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: var(--radius-sm);
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
   margin-bottom: 30px;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -312,7 +312,7 @@ nav .navbar-toggler {
 }
 
 #services-sec .services-card i {
-  font-size: 30px;
+  font-size: var(--fs-xxl);
   margin-bottom: 20px;
   line-height: 60px;
   transition: all 0.5s;
@@ -360,13 +360,13 @@ nav .navbar-toggler {
 #services-sec .services-card span {
   margin-bottom: 15px;
   font-weight: 800;
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
+  font-size: var(--fs-lg);
+  font-family: var(--font-secondary);
   color: var(--very-dark-gray);
 }
 
 #services-sec .services-card p {
-  font-size: 14px;
+  font-size: var(--fs-sm);
   word-spacing: 2px;
   line-height: 1.6;
   color: var(--dark-grayish-cyan);
@@ -406,18 +406,18 @@ nav .navbar-toggler {
 #testimonials-sec .carousel-inner p {
   word-spacing: 2px;
   line-height: 1.6;
-  font-size: 15px;
+  font-size: var(--fs-md);
   color: var(--dark-grayish-cyan);
 }
 
 #testimonials-sec .carousel-inner span:nth-child(3) {
   margin: 30px 0 5px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
   color: var(--very-dark-gray);
 }
 
 #testimonials-sec .carousel-inner span:last-child {
-  font-size: 12px;
+  font-size: var(--fs-xxs);
   color: #888888;
   margin-bottom: 30px;
 }
@@ -427,21 +427,21 @@ nav .navbar-toggler {
 }
 
 #counter-sec i {
-  font-size: 30px;
+  font-size: var(--fs-xxl);
   margin-bottom: 15px;
   color: var(--very-dark-gray);
 }
 
 #counter-sec span:nth-child(2) {
   font-weight: 900;
-  font-size: 30px;
+  font-size: var(--fs-xxl);
   margin-bottom: 15px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
   color: var(--very-dark-gray);
 }
 
 #counter-sec span:last-child {
-  font-size: 15px;
+  font-size: var(--fs-md);
   margin-bottom: 30px;
   color: var(--dark-grayish-cyan);
 }
@@ -453,7 +453,7 @@ nav .navbar-toggler {
 
 #team-sec .card-content {
   background-color: #5b5b5b;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
   color: var(--white);
   padding: 18px;
   border-radius: 0px 0px 6px 6px;
@@ -464,7 +464,7 @@ nav .navbar-toggler {
 }
 
 #team-sec .card-content p:first-child {
-  font-size: 25px;
+  font-size: var(--fs-xl);
   margin-bottom: 5px;
 }
 
@@ -554,7 +554,7 @@ nav .navbar-toggler {
 }
 
 #contact-sec i {
-  font-size: 25px;
+  font-size: var(--fs-xl);
   width: 60px;
   height: 60px;
   background-color: var(--light-gray);
@@ -578,12 +578,12 @@ nav .navbar-toggler {
 
 #contact-sec span:nth-child(2) {
   margin-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
   color: var(--very-dark-gray);
 }
 
 #contact-sec span:last-child {
-  font-size: 15px;
+  font-size: var(--fs-md);
   color: var(--dark-grayish-cyan);
 }
 
@@ -592,15 +592,15 @@ nav .navbar-toggler {
 }
 
 #contact-sec .form-control {
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   padding: 10px;
   background-color: var(--light-gray);
-  font-size: 14px;
+  font-size: var(--fs-sm);
   margin-bottom: 15px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
   border: 2px transparent solid;
 }
 
@@ -625,17 +625,17 @@ nav .navbar-toggler {
   color: var(--very-light-gray);
   padding: 10px 40px;
   border: 1px solid var(--mostly-black);
-  border-radius: 5px;
-  font-size: 13px;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  -webkit-border-radius: var(--radius-sm);
+  -moz-border-radius: var(--radius-sm);
+  -ms-border-radius: var(--radius-sm);
+  -o-border-radius: var(--radius-sm);
   margin-top: 5px;
 }
 
@@ -658,7 +658,7 @@ footer {
 }
 
 footer p {
-  font-size: 13px;
+  font-size: var(--fs-xs);
   word-spacing: 2px;
   color: var(--dark-grayish-cyan);
 }
@@ -666,7 +666,7 @@ footer p {
 header h1 {
   font-weight: 200;
 
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
   padding: 12px 0px;
 }
 
@@ -889,8 +889,8 @@ header .h1-wrap::after {
 }
 
 #portfolio-sec .portfolio-layer p {
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
+  font-size: var(--fs-xxs);
+  font-family: var(--font-secondary);
   margin: 0px;
   color: var(--very-dark-gray);
   letter-spacing: 2px;
@@ -976,4 +976,16 @@ header .h1-wrap::after {
   --rgb-white: 255, 255, 255;
   --light-gray: #f4f4f4;
   --dark-gray: #222222;
+
+  --font-secondary: "Montserrat", sans-serif;
+
+  --fs-xxs: 12px;
+  --fs-xs: 13px;
+  --fs-sm: 14px;
+  --fs-md: 15px;
+  --fs-lg: 18px;
+  --fs-xl: 25px;
+  --fs-xxl: 30px;
+
+  --radius-sm: 5px;
 }
