@@ -946,6 +946,24 @@ header .h1-wrap::after {
   margin-bottom: 30px;
 }
 
+.arrow-up {
+  right: 15px;
+  bottom: 15px;
+  border: 2px white solid;
+  width: 45px;
+  height: 45px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.arrow-up:hover {
+  opacity: 1;
+}
+
 :root {
   --white: #ffffff;
   --black: 0, 0, 0;
